@@ -31,3 +31,4 @@ It is a viable choice for software projects to be started quickly. aws_3tier_arc
 
  12 MySQL DB
 
+![Screenshot_20231001_212302](https://github.com/sourabhdey21/AWS/assets/98477908/8b990a30-02c2-4b92-96f0-178d8f8aee3a)
