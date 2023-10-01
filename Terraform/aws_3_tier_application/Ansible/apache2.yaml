@@ -1,0 +1,61 @@
+---
+- name: Install Apache2
+  hosts: "*"
+  become: yes
+  tasks:
+    - name: Update apt package cache
+      apt:
+        update_cache: yes
+      become: yes
+
+    - name: Install Apache2
+      apt:
+        name: apache2
+        state: present
+      become: yes
+
+    - name: Start Apache2 service
+      service:
+        name: apache2
+        state: started
+      become: yes
+
+
+- name: Modify apache2 in Server1
+  hosts: web1 
+  become: yes
+  tasks:
+    - name: Deploy Sample HTML Page
+      copy:
+        content: |
+          <!DOCTYPE html>
+          <html>
+          <head>
+              <title>Sample Apache Page</title>
+          </head>
+          <body>
+              <h1>Welcome to Apache2! From Server1 </h1>
+              <p>This is a sample HTML page deployed by Ansible.</p>
+          </body>
+          </html>
+        dest: /var/www/html/index.html
+
+
+- name: Modify apache2 in server2
+  hosts: web2
+  become: yes
+  tasks:
+    - name: Deploy Sample HTML Page
+      copy:
+        content: |
+          <!DOCTYPE html>
+          <html>
+          <head>
+              <title>Sample Apache Page</title>
+          </head>
+          <body>
+              <h1>Welcome to Apache2! From Server2</h1>
+              <p>This is a sample HTML page deployed by Ansible.</p>
+          </body>
+          </html>
+        dest: /var/www/html/index.html
