@@ -7,27 +7,27 @@ It is a viable choice for software projects to be started quickly. aws_3tier_arc
 
 
 <h1> Resources need to be created / installed : </h1>
- Custom VPC
+ 1 Custom VPC
 
-2 Subnets (Public)
+ 2 Subnets (Public)
 
-1 Subnet (Private)
+ 3 Subnet (Private)
 
-2 EC2 Instances
+ 4 EC2 Instances
 
-3 Security Group
+ 5 Security Group
 
-4 Elastic IP
+ 6 Elastic IP
 
-5 NAT Gateway
+ 7 NAT Gateway
 
-6 Internet Gateway
+ 8 Internet Gateway
 
-7 Route Table
+ 9 Route Table
 
-8 Application Load Balancer
+ 10 Application Load Balancer
 
-9 Apache Webserver
+ 11 Apache Webserver
 
-10 MySQL DB
+ 12 MySQL DB
 
