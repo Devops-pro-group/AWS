@@ -1,0 +1,35 @@
+<h1> AWS_3tier_architecture_terraform  </h1>
+Infrastructure Automation | Deploying a 3-Tier Architecture in AWS Using Terraform
+
+The three-tier architecture is the most popular implementation of a multi-tier architecture and consists of a single presentation tier, logic tier, and data tier.
+
+It is a viable choice for software projects to be started quickly. aws_3tier_architecture_terraform
+
+
+<h1> Resources need to be created / installed : </h1>
+ 1 Custom VPC
+
+ 2 Subnets (Public)
+
+ 3 Subnet (Private)
+
+ 4 EC2 Instances
+
+ 5 Security Group
+
+ 6 Elastic IP
+
+ 7 NAT Gateway
+
+ 8 Internet Gateway
+
+ 9 Route Table
+
+ 10 Application Load Balancer
+
+ 11 Apache Webserver
+
+ 12 MySQL DB
+
+
+![project1-Architecture drawio](https://github.com/sourabhdey21/AWS/assets/98477908/76750b04-7d45-4896-b183-de8ad372bb22)
